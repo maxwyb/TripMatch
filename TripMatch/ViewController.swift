@@ -16,7 +16,8 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    // the Facebook Login button
     let loginButton = LoginButton(readPermissions: [ .publicProfile, .custom("user_events")])
     loginButton.center = view.center
     
@@ -25,16 +26,15 @@ class ViewController: UIViewController {
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 
-  @IBOutlet weak var userInfoLabel: UILabel!
-
-  @IBAction func getUserInfoButtonClicked() {
+  func getUserInfo() {
+    // get a Facebook user's metadata after logged into Facebook
     if let accessToken = AccessToken.current {
       if let userID = accessToken.userId {
         FbUserID = userID
         
+        print("\(accessToken)")
         let userIDString = "Facebook User ID = " + userID
         userInfoLabel.text = userIDString
         print("Facebook User ID = " + userID)
@@ -42,7 +42,32 @@ class ViewController: UIViewController {
     }
   }
   
+  func processUserEventsResponse(_ response: GraphRequest.Response) {
+    
+    //let respResult = response as! NSDictionary
+    /*
+    var jsonError: NSError?
+    let swiftObject: AnyObject = JSONSerialization.JSONObjectWithData(response, options: JSONSerialization.ReadingOptions.AllowFragments)
+     */
+    
+    // parse the events query response into an array of event names
+    let respResult = response.dictionaryValue!
+    let eventsList = respResult["data"] as! NSArray
+    
+    var allUserEvents = ""
+    for eventEntry in eventsList {
+      let eventEntryDict = eventEntry as! NSDictionary
+      
+      // get the dictionary of each event here
+      print(eventEntryDict["name"]!)
+      let eventNameWithNL = (eventEntryDict["name"]! as! String) + "\n"
+      allUserEvents.append(eventNameWithNL)
+    }
+    eventsListLabel.text = allUserEvents
+  }
+  
   func getUserEvents() {
+    // send query of an users' events going in Graph API
     if let userID = FbUserID {
       let FbGraphPath = userID + "/events"
       //let FbGraphPath = "me"
@@ -53,12 +78,22 @@ class ViewController: UIViewController {
         switch result {
         case .success(let response):
           print("Graph Request Succeeded: \(response)")
+          self.processUserEventsResponse(response)
+          
         case .failed(let error):
           print("Graph Request Failed: \(error)")
         }
       }
       connection.start()
     }
+  }
+
+  @IBOutlet weak var userInfoLabel: UILabel!
+  
+  @IBOutlet weak var eventsListLabel: UILabel!
+
+  @IBAction func getUserInfoButtonClicked() {
+    getUserInfo()
   }
   
   @IBAction func getEventsButtonClicked() {
