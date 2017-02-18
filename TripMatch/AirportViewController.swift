@@ -17,18 +17,6 @@ class AirportViewController: UIViewController, UITextFieldDelegate {
   
   @IBOutlet weak var AirportNamesLabel: UILabel!
   
-  // MARK: UITextFieldDelegate
-  func textFieldDidChange(_ textField: UITextField) {
-    if let userTyped = textField.text {
-          sendAirportAutocompleteRequest(airportName: userTyped)
-    }
-  }
-  
-  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    self.view.endEditing(true)
-    return false
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -73,7 +61,7 @@ class AirportViewController: UIViewController, UITextFieldDelegate {
         var allAirportLabels = ""
         for airport in airportLists {
           let airportDict = airport as! NSDictionary
-          let airportLabel = airportDict["label"]!
+          let airportLabel = airportDict["label"]!  // the name string of each airport
           
           let airportLabelWithNewLine = (airportLabel as! String) + "\n"
           allAirportLabels.append(airportLabelWithNewLine)
@@ -85,4 +73,18 @@ class AirportViewController: UIViewController, UITextFieldDelegate {
     }
   }
   
+  // MARK: UITextFieldDelegate
+  func textFieldDidChange(_ textField: UITextField) {
+    if let userTyped = textField.text {
+      // we do not query Amadeus API when the user clears his input, or the response JSON cannot be parsed into NSArray
+      if (userTyped != "") {
+        sendAirportAutocompleteRequest(airportName: userTyped)
+      }
+    }
+  }
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    self.view.endEditing(true)
+    return false
+  }
 }
