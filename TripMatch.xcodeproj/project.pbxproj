@@ -13,6 +13,10 @@
 		5051CBCD1E585BAE00E6EC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5051CBCC1E585BAE00E6EC13 /* Assets.xcassets */; };
 		5051CBD01E585BAE00E6EC13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5051CBCE1E585BAE00E6EC13 /* LaunchScreen.storyboard */; };
 		5C599E733EED3ACA9B5309C7 /* Pods_TripMatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4131B46BAEF26E7F42E84C73 /* Pods_TripMatch.framework */; };
+		81E5B9651E58AC6800657D12 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5B9641E58AC6800657D12 /* TextFieldsEffects.swift */; };
+		81E5B9671E58AC7300657D12 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5B9661E58AC7300657D12 /* HoshiTextField.swift */; };
+		81E5B9691E58B61300657D12 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5B9681E58B61300657D12 /* LoginViewController.swift */; };
+		81E5B96B1E58BBB400657D12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81E5B96A1E58BBB400657D12 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,11 @@
 		5051CBCC1E585BAE00E6EC13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5051CBCF1E585BAE00E6EC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5051CBD11E585BAE00E6EC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81E5B9631E58AC5900657D12 /* TextFieldEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		81E5B9641E58AC6800657D12 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
+		81E5B9661E58AC7300657D12 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		81E5B9681E58B61300657D12 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		81E5B96A1E58BBB400657D12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C9F6F9D004628D887E2AFD39 /* Pods-TripMatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripMatch/Pods-TripMatch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,8 +70,13 @@
 		5051CBC41E585BAE00E6EC13 /* TripMatch */ = {
 			isa = PBXGroup;
 			children = (
+				81E5B96A1E58BBB400657D12 /* GoogleService-Info.plist */,
+				81E5B9631E58AC5900657D12 /* TextFieldEffects.h */,
+				81E5B9641E58AC6800657D12 /* TextFieldsEffects.swift */,
+				81E5B9661E58AC7300657D12 /* HoshiTextField.swift */,
 				5051CBC51E585BAE00E6EC13 /* AppDelegate.swift */,
 				5051CBC71E585BAE00E6EC13 /* ViewController.swift */,
+				81E5B9681E58B61300657D12 /* LoginViewController.swift */,
 				5051CBC91E585BAE00E6EC13 /* Main.storyboard */,
 				5051CBCC1E585BAE00E6EC13 /* Assets.xcassets */,
 				5051CBCE1E585BAE00E6EC13 /* LaunchScreen.storyboard */,
@@ -123,7 +137,7 @@
 				TargetAttributes = {
 					5051CBC11E585BAE00E6EC13 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8YVEPU4MZW;
+						DevelopmentTeam = GZ94KJGS66;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5051CBD01E585BAE00E6EC13 /* LaunchScreen.storyboard in Resources */,
+				81E5B96B1E58BBB400657D12 /* GoogleService-Info.plist in Resources */,
 				5051CBCD1E585BAE00E6EC13 /* Assets.xcassets in Resources */,
 				5051CBCB1E585BAE00E6EC13 /* Main.storyboard in Resources */,
 			);
@@ -202,7 +217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -213,7 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5051CBC81E585BAE00E6EC13 /* ViewController.swift in Sources */,
+				81E5B9651E58AC6800657D12 /* TextFieldsEffects.swift in Sources */,
 				5051CBC61E585BAE00E6EC13 /* AppDelegate.swift in Sources */,
+				81E5B9691E58B61300657D12 /* LoginViewController.swift in Sources */,
+				81E5B9671E58AC7300657D12 /* HoshiTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +355,9 @@
 			baseConfigurationReference = C9F6F9D004628D887E2AFD39 /* Pods-TripMatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8YVEPU4MZW;
+				DEVELOPMENT_TEAM = GZ94KJGS66;
 				INFOPLIST_FILE = TripMatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YingboWang.TripMatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,8 +370,9 @@
 			baseConfigurationReference = 304A1205C6E87874A65B5B15 /* Pods-TripMatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8YVEPU4MZW;
+				DEVELOPMENT_TEAM = GZ94KJGS66;
 				INFOPLIST_FILE = TripMatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YingboWang.TripMatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +399,7 @@
 				5051CBD61E585BAE00E6EC13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
