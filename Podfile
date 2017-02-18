@@ -11,4 +11,5 @@ target 'TripMatch' do
   pod 'FacebookShare'
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'Alamofire', '~> 4.3'
 end
