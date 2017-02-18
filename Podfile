@@ -9,4 +9,6 @@ target 'TripMatch' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
+  pod 'Firebase'
+  pod 'Firebase/Database'
 end
