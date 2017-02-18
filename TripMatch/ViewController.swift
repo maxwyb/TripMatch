@@ -12,10 +12,12 @@ import FacebookCore
 
 class ViewController: UIViewController {
 
+  var FbUserID: String?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    let loginButton = LoginButton(readPermissions: [ .publicProfile ])
+    let loginButton = LoginButton(readPermissions: [ .publicProfile, .custom("user_events")])
     loginButton.center = view.center
     
     view.addSubview(loginButton)
@@ -31,12 +33,37 @@ class ViewController: UIViewController {
   @IBAction func getUserInfoButtonClicked() {
     if let accessToken = AccessToken.current {
       if let userID = accessToken.userId {
+        FbUserID = userID
+        
         let userIDString = "Facebook User ID = " + userID
         userInfoLabel.text = userIDString
         print("Facebook User ID = " + userID)
       }
     }
   }
-
+  
+  func getUserEvents() {
+    if let userID = FbUserID {
+      let FbGraphPath = userID + "/events"
+      //let FbGraphPath = "me"
+      print("graphPath: ", FbGraphPath)
+      
+      let connection = GraphRequestConnection()
+      connection.add(GraphRequest(graphPath: FbGraphPath)) { httpResponse, result in
+        switch result {
+        case .success(let response):
+          print("Graph Request Succeeded: \(response)")
+        case .failed(let error):
+          print("Graph Request Failed: \(error)")
+        }
+      }
+      connection.start()
+    }
+  }
+  
+  @IBAction func getEventsButtonClicked() {
+    getUserEvents()
+  }
+  
 }
 
