@@ -11,4 +11,6 @@ target 'TripMatch' do
   pod 'FacebookShare'
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'Material', '~> 2.0'
+  
 end

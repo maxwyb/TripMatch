@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EQL-UP-oe9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cKf-cO-k3z">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="NOA-PL-AGw">
+            <objects>
+                <navigationController id="cKf-cO-k3z" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="aGC-v3-Uas">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EQL-UP-oe9" kind="relationship" relationship="rootViewController" id="Vkw-pP-xeU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dk6-L3-3BN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1450" y="842"/>
+        </scene>
+        <!--City Onboard View Controller-->
         <scene sceneID="Olf-CY-nEZ">
             <objects>
-                <viewController id="EQL-UP-oe9" sceneMemberID="viewController">
+                <viewController id="EQL-UP-oe9" customClass="CityOnboardViewController" customModule="TripMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ocs-lL-RBC"/>
                         <viewControllerLayoutGuide type="bottom" id="6JA-Ui-urU"/>
@@ -22,13 +38,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9Q-D9-8LI">
-                                <rect key="frame" x="273" y="586" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="pXh-yW-X5d" kind="show" id="1ld-GG-ZfH"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Dj-ft-OBe" customClass="HoshiTextField" customModule="TripMatch" customModuleProvider="target">
                                 <rect key="frame" x="54" y="289" width="267" height="51"/>
                                 <constraints>
@@ -49,34 +58,50 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which city are you travelling to?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2C-dv-WfF">
-                                <rect key="frame" x="54" y="137" width="265" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which city are you traveling to?" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2C-dv-WfF">
+                                <rect key="frame" x="54" y="181" width="265" height="21"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a40-hI-tEi" customClass="FabButton" customModule="Material">
+                                <rect key="frame" x="285" y="565" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="FlK-AV-8rH"/>
+                                    <constraint firstAttribute="width" constant="48" id="Oci-ha-Fy6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="pXh-yW-X5d" kind="show" id="Wba-mK-x6c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="I2C-dv-WfF" firstAttribute="trailing" secondItem="E9Q-D9-8LI" secondAttribute="trailing" id="4CE-Ob-N0O"/>
-                            <constraint firstItem="6JA-Ui-urU" firstAttribute="top" secondItem="E9Q-D9-8LI" secondAttribute="bottom" constant="51" id="Bl5-3d-f4k"/>
                             <constraint firstItem="I2C-dv-WfF" firstAttribute="leading" secondItem="5Dj-ft-OBe" secondAttribute="leading" id="Pad-Km-0dJ"/>
                             <constraint firstItem="5Dj-ft-OBe" firstAttribute="top" secondItem="siE-DJ-obu" secondAttribute="top" constant="289" id="Q0i-4x-Poa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a40-hI-tEi" secondAttribute="trailing" constant="26" id="RK7-wL-78X"/>
+                            <constraint firstItem="6JA-Ui-urU" firstAttribute="top" secondItem="a40-hI-tEi" secondAttribute="bottom" constant="54" id="jju-tI-VKQ"/>
                             <constraint firstItem="5Dj-ft-OBe" firstAttribute="centerX" secondItem="siE-DJ-obu" secondAttribute="centerX" id="nbY-cR-F9x"/>
                             <constraint firstAttribute="trailingMargin" secondItem="I2C-dv-WfF" secondAttribute="trailing" constant="40" id="nxk-OQ-rWm"/>
                             <constraint firstItem="I2C-dv-WfF" firstAttribute="top" secondItem="ocs-lL-RBC" secondAttribute="bottom" constant="117" id="tyi-sn-173"/>
                             <constraint firstItem="I2C-dv-WfF" firstAttribute="leading" secondItem="siE-DJ-obu" secondAttribute="leadingMargin" constant="38" id="u4E-yo-H5T"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sCL-ox-SJh"/>
+                    <connections>
+                        <outlet property="fabButton" destination="a40-hI-tEi" id="PHD-x4-EUJ"/>
+                        <outlet property="textField" destination="5Dj-ft-OBe" id="jJ3-8M-w6u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpP-lR-p4n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-655" y="843"/>
         </scene>
-        <!--View Controller-->
+        <!--Reason Onboard View Controller-->
         <scene sceneID="z7q-2f-KIe">
             <objects>
-                <viewController id="pXh-yW-X5d" sceneMemberID="viewController">
+                <viewController id="pXh-yW-X5d" customClass="ReasonOnboardViewController" customModule="TripMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3HQ-fl-R3T"/>
                         <viewControllerLayoutGuide type="bottom" id="iU6-ED-Jw0"/>
@@ -86,7 +111,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the reason you're going?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4G-2Q-7sH">
-                                <rect key="frame" x="55" y="141" width="265" height="21"/>
+                                <rect key="frame" x="55" y="185" width="265" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -111,7 +136,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlP-pT-YtY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlP-pT-YtY" customClass="FabButton" customModule="Material">
                                 <rect key="frame" x="274" y="590" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -131,15 +156,19 @@
                             <constraint firstItem="ZL9-wa-q0n" firstAttribute="leading" secondItem="kfe-oR-sAJ" secondAttribute="leadingMargin" constant="37" id="v9r-Zg-kCl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fabButton" destination="VlP-pT-YtY" id="Jqa-Jv-5Cl"/>
+                        <outlet property="textField" destination="ZL9-wa-q0n" id="nzQ-sE-Gf1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhm-qc-toN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="118" y="842"/>
         </scene>
-        <!--View Controller-->
+        <!--Airline Onboard View Controller-->
         <scene sceneID="c9X-nk-qsB">
             <objects>
-                <viewController id="WVh-u1-PF7" sceneMemberID="viewController">
+                <viewController id="WVh-u1-PF7" customClass="AirlineOnboardViewController" customModule="TripMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KW7-t2-msr"/>
                         <viewControllerLayoutGuide type="bottom" id="WzS-yY-NoU"/>
@@ -149,7 +178,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What airline are you riding?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krd-Lf-3WM">
-                                <rect key="frame" x="55" y="140" width="265" height="21"/>
+                                <rect key="frame" x="55" y="184" width="265" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -174,9 +203,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tp-pM-EJH">
-                                <rect key="frame" x="275" y="591" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tp-pM-EJH" customClass="FabButton" customModule="Material">
+                                <rect key="frame" x="282" y="591" width="39" height="30"/>
+                                <state key="normal" title="lalalal"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="blah"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="hZD-Yn-pHV" kind="show" id="8oQ-Sc-1Z7"/>
                                 </connections>
@@ -194,6 +226,10 @@
                             <constraint firstItem="Yxz-uo-Enb" firstAttribute="trailing" secondItem="4Tp-pM-EJH" secondAttribute="trailing" id="qij-le-UHK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fabButton" destination="4Tp-pM-EJH" id="Sk5-EP-Lc4"/>
+                        <outlet property="textField" destination="Yxz-uo-Enb" id="cUb-fm-dQP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTC-bA-mOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,7 +294,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Number?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX7-vx-eK4">
-                                <rect key="frame" x="55" y="140" width="265" height="21"/>
+                                <rect key="frame" x="55" y="184" width="265" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -283,7 +319,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ob-pU-G3J">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ob-pU-G3J" customClass="FabButton" customModule="Material">
                                 <rect key="frame" x="275" y="591" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -321,7 +357,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What airport are you departing from?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7C3-QC-nqi">
-                                <rect key="frame" x="55" y="140" width="290" height="21"/>
+                                <rect key="frame" x="55" y="184" width="290" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -346,11 +382,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oby-mY-q9b">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oby-mY-q9b" customClass="FabButton" customModule="TripMatch" customModuleProvider="target">
                                 <rect key="frame" x="275" y="591" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="v29-F8-5Yk" kind="show" id="WZ5-jR-ffy"/>
+                                    <segue destination="v29-F8-5Yk" kind="presentation" id="yE0-mW-PmT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -423,11 +459,11 @@
                         <viewControllerLayoutGuide type="bottom" id="b5u-Kh-9rG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PNe-EN-PVp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZl-gu-EYg">
-                                <rect key="frame" x="154.5" y="323" width="66" height="21"/>
+                                <rect key="frame" x="154.5" y="158" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -439,10 +475,12 @@
                             <constraint firstItem="tZl-gu-EYg" firstAttribute="centerX" secondItem="PNe-EN-PVp" secondAttribute="centerX" id="RkP-I0-kLw"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="337"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lP-6S-cXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2689" y="1853"/>
+            <point key="canvasLocation" x="2662" y="1695"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fCE-6j-8vz">
@@ -453,11 +491,11 @@
                         <viewControllerLayoutGuide type="bottom" id="u3x-Yp-HG5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UOI-vA-vsp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LA - BOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mK2-hU-byL">
-                                <rect key="frame" x="152" y="323" width="71" height="21"/>
+                                <rect key="frame" x="152" y="158" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -469,10 +507,12 @@
                             <constraint firstItem="mK2-hU-byL" firstAttribute="centerX" secondItem="UOI-vA-vsp" secondAttribute="centerX" id="ogB-NG-CTh"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="337"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VpO-kZ-tCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3436" y="1853"/>
+            <point key="canvasLocation" x="3550" y="1695"/>
         </scene>
     </scenes>
 </document>

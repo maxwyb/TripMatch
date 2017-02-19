@@ -51,6 +51,9 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - Material (2.4.16):
+    - Material/Core (= 2.4.16)
+  - Material/Core (2.4.16)
 
 DEPENDENCIES:
   - FacebookCore
@@ -58,6 +61,7 @@ DEPENDENCIES:
   - FacebookShare
   - Firebase
   - Firebase/Database
+  - Material (~> 2.0)
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -75,7 +79,8 @@ SPEC CHECKSUMS:
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  Material: 84645fb4c9409c3db76bd7c8e1fd00dc4a76c144
 
-PODFILE CHECKSUM: f0dad09048763a2056a6fe042bdec6dcd21db02a
+PODFILE CHECKSUM: 702f8c5d20f06dfb337ed1f412383030a6ec123b
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0

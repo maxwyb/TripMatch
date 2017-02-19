@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		3B4169301E58DBB30001D532 /* DashHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B41692F1E58DBB30001D532 /* DashHeaderViewController.swift */; };
 		3B4169321E58E9E00001D532 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4169311E58E9E00001D532 /* DashboardViewController.swift */; };
+		3B4169FB1E5903620001D532 /* CityOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4169FA1E5903620001D532 /* CityOnboardViewController.swift */; };
+		3B4169FE1E5903BA0001D532 /* ReasonOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4169FD1E5903BA0001D532 /* ReasonOnboardViewController.swift */; };
+		3B416A001E5903D00001D532 /* AirlineOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4169FF1E5903D00001D532 /* AirlineOnboardViewController.swift */; };
+		3B416A021E59040F0001D532 /* BaseOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416A011E59040F0001D532 /* BaseOnboardViewController.swift */; };
+		3B416A051E5916B50001D532 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416A041E5916B50001D532 /* Utility.swift */; };
 		5051CBC61E585BAE00E6EC13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051CBC51E585BAE00E6EC13 /* AppDelegate.swift */; };
 		5051CBC81E585BAE00E6EC13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051CBC71E585BAE00E6EC13 /* ViewController.swift */; };
 		5051CBCB1E585BAE00E6EC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5051CBC91E585BAE00E6EC13 /* Main.storyboard */; };
@@ -25,6 +30,11 @@
 		304A1205C6E87874A65B5B15 /* Pods-TripMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripMatch/Pods-TripMatch.release.xcconfig"; sourceTree = "<group>"; };
 		3B41692F1E58DBB30001D532 /* DashHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashHeaderViewController.swift; sourceTree = "<group>"; };
 		3B4169311E58E9E00001D532 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		3B4169FA1E5903620001D532 /* CityOnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityOnboardViewController.swift; path = Onboard/CityOnboardViewController.swift; sourceTree = "<group>"; };
+		3B4169FD1E5903BA0001D532 /* ReasonOnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReasonOnboardViewController.swift; path = Onboard/ReasonOnboardViewController.swift; sourceTree = "<group>"; };
+		3B4169FF1E5903D00001D532 /* AirlineOnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirlineOnboardViewController.swift; path = Onboard/AirlineOnboardViewController.swift; sourceTree = "<group>"; };
+		3B416A011E59040F0001D532 /* BaseOnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseOnboardViewController.swift; path = Onboard/BaseOnboardViewController.swift; sourceTree = "<group>"; };
+		3B416A041E5916B50001D532 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Utility/Utility.swift; sourceTree = "<group>"; };
 		4131B46BAEF26E7F42E84C73 /* Pods_TripMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5051CBC21E585BAE00E6EC13 /* TripMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5051CBC51E585BAE00E6EC13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +63,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B4169FC1E5903680001D532 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				3B416A011E59040F0001D532 /* BaseOnboardViewController.swift */,
+				3B4169FA1E5903620001D532 /* CityOnboardViewController.swift */,
+				3B4169FD1E5903BA0001D532 /* ReasonOnboardViewController.swift */,
+				3B4169FF1E5903D00001D532 /* AirlineOnboardViewController.swift */,
+			);
+			name = Onboard;
+			sourceTree = "<group>";
+		};
+		3B416A031E59168C0001D532 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3B416A041E5916B50001D532 /* Utility.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		5051CBB91E585BAE00E6EC13 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +103,8 @@
 		5051CBC41E585BAE00E6EC13 /* TripMatch */ = {
 			isa = PBXGroup;
 			children = (
+				3B416A031E59168C0001D532 /* Utility */,
+				3B4169FC1E5903680001D532 /* Onboard */,
 				81E5B96A1E58BBB400657D12 /* GoogleService-Info.plist */,
 				81E5B9631E58AC5900657D12 /* TextFieldEffects.h */,
 				81E5B9641E58AC6800657D12 /* TextFieldsEffects.swift */,
@@ -223,7 +254,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -233,13 +264,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4169FB1E5903620001D532 /* CityOnboardViewController.swift in Sources */,
+				3B4169FE1E5903BA0001D532 /* ReasonOnboardViewController.swift in Sources */,
 				5051CBC81E585BAE00E6EC13 /* ViewController.swift in Sources */,
 				3B4169321E58E9E00001D532 /* DashboardViewController.swift in Sources */,
+				3B416A021E59040F0001D532 /* BaseOnboardViewController.swift in Sources */,
 				3B4169301E58DBB30001D532 /* DashHeaderViewController.swift in Sources */,
 				81E5B9651E58AC6800657D12 /* TextFieldsEffects.swift in Sources */,
 				5051CBC61E585BAE00E6EC13 /* AppDelegate.swift in Sources */,
+				3B416A051E5916B50001D532 /* Utility.swift in Sources */,
 				81E5B9691E58B61300657D12 /* LoginViewController.swift in Sources */,
 				81E5B9671E58AC7300657D12 /* HoshiTextField.swift in Sources */,
+				3B416A001E5903D00001D532 /* AirlineOnboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
