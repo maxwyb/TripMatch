@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (4.3.0)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -52,19 +51,19 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
-  - SearchTextField (1.0.7)
+  - Material (2.4.16):
+    - Material/Core (= 2.4.16)
+  - Material/Core (2.4.16)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.3)
   - FacebookCore
   - FacebookLogin
   - FacebookShare
   - Firebase
   - Firebase/Database
-  - SearchTextField
+  - Material (~> 2.0)
 
 SPEC CHECKSUMS:
-  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
   FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
@@ -80,8 +79,8 @@ SPEC CHECKSUMS:
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
-  SearchTextField: 0ac05920547702261faa2a427bc4add64cefab57
+  Material: 84645fb4c9409c3db76bd7c8e1fd00dc4a76c144
 
-PODFILE CHECKSUM: c437677f7115df660a98706f58239076f474bf2d
+PODFILE CHECKSUM: 702f8c5d20f06dfb337ed1f412383030a6ec123b
 
 COCOAPODS: 1.2.0
