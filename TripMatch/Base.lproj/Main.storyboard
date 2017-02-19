@@ -281,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="120.98950524737631"/>
         </scene>
-        <!--View Controller-->
+        <!--Flight Onboard View Controller-->
         <scene sceneID="dZ8-Ut-wzG">
             <objects>
-                <viewController id="hZD-Yn-pHV" sceneMemberID="viewController">
+                <viewController id="hZD-Yn-pHV" customClass="FlightOnboardViewController" customModule="TripMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Xx-zv-E4E"/>
                         <viewControllerLayoutGuide type="bottom" id="tFL-qZ-kpe"/>
@@ -339,15 +339,19 @@
                             <constraint firstItem="dX7-vx-eK4" firstAttribute="top" secondItem="4Xx-zv-E4E" secondAttribute="bottom" constant="120" id="nnV-CK-yWY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fabButton" destination="4ob-pU-G3J" id="eto-rz-khR"/>
+                        <outlet property="textField" destination="Nqw-ND-Mkv" id="qyC-LA-Whh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MbT-Vu-zfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1596" y="842"/>
         </scene>
-        <!--View Controller-->
+        <!--Flight Onboard View Controller-->
         <scene sceneID="3jB-xF-i5t">
             <objects>
-                <viewController id="xsr-dF-JhI" sceneMemberID="viewController">
+                <viewController id="xsr-dF-JhI" customClass="FlightOnboardViewController" customModule="TripMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JZD-ew-aPB"/>
                         <viewControllerLayoutGuide type="bottom" id="0wm-kk-N5F"/>
@@ -369,7 +373,7 @@
                                 </constraints>
                                 <color key="textColor" red="0.3422979712" green="0.39760923390000003" blue="0.46281796689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                         <color key="value" red="0.3422979712" green="0.39760923390000003" blue="0.46281796689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -382,7 +386,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oby-mY-q9b" customClass="FabButton" customModule="TripMatch" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oby-mY-q9b" customClass="FabButton" customModule="Material">
                                 <rect key="frame" x="275" y="591" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -402,6 +406,10 @@
                             <constraint firstItem="luT-0M-7EP" firstAttribute="leading" secondItem="6J0-v9-Rx4" secondAttribute="leadingMargin" constant="38" id="zUo-MI-NEQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fabButton" destination="oby-mY-q9b" id="OEM-fq-ccz"/>
+                        <outlet property="textField" destination="luT-0M-7EP" id="Yql-ro-9Y6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vpt-Am-lnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
