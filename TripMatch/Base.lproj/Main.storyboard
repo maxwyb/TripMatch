@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cKf-cO-k3z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cKf-cO-k3z">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -74,7 +74,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a40-hI-tEi" customClass="FabButton" customModule="Material">
-                                <rect key="frame" x="285" y="565" width="48" height="48"/>
+                                <rect key="frame" x="285" y="593" width="48" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="FlK-AV-8rH"/>
                                     <constraint firstAttribute="width" constant="48" id="Oci-ha-Fy6"/>
@@ -90,7 +90,7 @@
                             <constraint firstItem="I2C-dv-WfF" firstAttribute="leading" secondItem="5Dj-ft-OBe" secondAttribute="leading" id="Pad-Km-0dJ"/>
                             <constraint firstItem="5Dj-ft-OBe" firstAttribute="top" secondItem="siE-DJ-obu" secondAttribute="top" constant="289" id="Q0i-4x-Poa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="a40-hI-tEi" secondAttribute="trailing" constant="26" id="RK7-wL-78X"/>
-                            <constraint firstItem="6JA-Ui-urU" firstAttribute="top" secondItem="a40-hI-tEi" secondAttribute="bottom" constant="54" id="jju-tI-VKQ"/>
+                            <constraint firstItem="6JA-Ui-urU" firstAttribute="top" secondItem="a40-hI-tEi" secondAttribute="bottom" constant="26" id="jju-tI-VKQ"/>
                             <constraint firstItem="5Dj-ft-OBe" firstAttribute="centerX" secondItem="siE-DJ-obu" secondAttribute="centerX" id="nbY-cR-F9x"/>
                             <constraint firstAttribute="trailingMargin" secondItem="I2C-dv-WfF" secondAttribute="trailing" constant="40" id="nxk-OQ-rWm"/>
                             <constraint firstItem="I2C-dv-WfF" firstAttribute="top" secondItem="ocs-lL-RBC" secondAttribute="bottom" constant="117" id="tyi-sn-173"/>
@@ -149,7 +149,11 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlP-pT-YtY" customClass="FabButton" customModule="Material">
-                                <rect key="frame" x="274" y="590" width="46" height="30"/>
+                                <rect key="frame" x="285" y="593" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="0PL-Vg-MZP"/>
+                                    <constraint firstAttribute="height" constant="48" id="hr4-yi-Zlb"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="WVh-u1-PF7" kind="show" id="L2w-us-Wjd"/>
@@ -159,12 +163,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="x4G-2Q-7sH" firstAttribute="centerX" secondItem="kfe-oR-sAJ" secondAttribute="centerX" id="1Xw-8a-lx2"/>
+                            <constraint firstItem="iU6-ED-Jw0" firstAttribute="top" secondItem="VlP-pT-YtY" secondAttribute="bottom" constant="26" id="9bh-y0-KrI"/>
                             <constraint firstItem="ZL9-wa-q0n" firstAttribute="top" secondItem="kfe-oR-sAJ" secondAttribute="top" constant="290" id="Isb-ia-pWW"/>
                             <constraint firstItem="x4G-2Q-7sH" firstAttribute="top" secondItem="3HQ-fl-R3T" secondAttribute="bottom" constant="121" id="O6h-Qa-RCO"/>
                             <constraint firstItem="x4G-2Q-7sH" firstAttribute="trailing" secondItem="ZL9-wa-q0n" secondAttribute="trailing" id="eZh-mr-RDr"/>
-                            <constraint firstItem="iU6-ED-Jw0" firstAttribute="top" secondItem="VlP-pT-YtY" secondAttribute="bottom" constant="47" id="jQe-cR-a0C"/>
-                            <constraint firstItem="ZL9-wa-q0n" firstAttribute="trailing" secondItem="VlP-pT-YtY" secondAttribute="trailing" id="lHf-fp-YJ3"/>
+                            <constraint firstItem="iU6-ED-Jw0" firstAttribute="top" secondItem="VlP-pT-YtY" secondAttribute="bottom" constant="26" id="jQe-cR-a0C"/>
                             <constraint firstItem="x4G-2Q-7sH" firstAttribute="leading" secondItem="kfe-oR-sAJ" secondAttribute="leadingMargin" constant="39" id="tkf-Yv-tXM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VlP-pT-YtY" secondAttribute="trailing" constant="26" id="toW-GT-60e"/>
                             <constraint firstItem="ZL9-wa-q0n" firstAttribute="leading" secondItem="kfe-oR-sAJ" secondAttribute="leadingMargin" constant="37" id="v9r-Zg-kCl"/>
                         </constraints>
                     </view>
@@ -218,8 +223,12 @@
                                     <outlet property="delegate" destination="WVh-u1-PF7" id="yWS-29-2hC"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tp-pM-EJH" customClass="FabButton" customModule="Material">
-                                <rect key="frame" x="282" y="591" width="39" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Tp-pM-EJH" customClass="FabButton" customModule="Material">
+                                <rect key="frame" x="282" y="611" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="jgj-C4-KnD"/>
+                                    <constraint firstAttribute="width" constant="48" id="xaQ-Wu-nDE"/>
+                                </constraints>
                                 <state key="normal" title="lalalal"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="blah"/>
@@ -236,9 +245,9 @@
                             <constraint firstItem="Krd-Lf-3WM" firstAttribute="top" secondItem="KW7-t2-msr" secondAttribute="bottom" constant="120" id="UIF-qT-loq"/>
                             <constraint firstItem="Krd-Lf-3WM" firstAttribute="centerX" secondItem="ipE-MG-tqq" secondAttribute="centerX" id="XAA-aU-jGD"/>
                             <constraint firstItem="Krd-Lf-3WM" firstAttribute="leading" secondItem="ipE-MG-tqq" secondAttribute="leadingMargin" constant="39" id="ZNd-iC-FRX"/>
-                            <constraint firstItem="WzS-yY-NoU" firstAttribute="top" secondItem="4Tp-pM-EJH" secondAttribute="bottom" constant="46" id="ZTc-PP-DMu"/>
+                            <constraint firstItem="WzS-yY-NoU" firstAttribute="top" secondItem="4Tp-pM-EJH" secondAttribute="bottom" constant="26" id="ZTc-PP-DMu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Tp-pM-EJH" secondAttribute="trailing" constant="26" id="dKf-PL-qda"/>
                             <constraint firstItem="Krd-Lf-3WM" firstAttribute="centerX" secondItem="Yxz-uo-Enb" secondAttribute="centerX" id="pqM-ly-apu"/>
-                            <constraint firstItem="Yxz-uo-Enb" firstAttribute="trailing" secondItem="4Tp-pM-EJH" secondAttribute="trailing" id="qij-le-UHK"/>
                         </constraints>
                     </view>
                     <connections>
@@ -338,7 +347,11 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ob-pU-G3J" customClass="FabButton" customModule="Material">
-                                <rect key="frame" x="275" y="591" width="46" height="30"/>
+                                <rect key="frame" x="285" y="593" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="OHA-mL-FPg"/>
+                                    <constraint firstAttribute="height" constant="48" id="tVA-eT-Dox"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="xsr-dF-JhI" kind="show" id="8k3-Yj-uRZ"/>
@@ -347,12 +360,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tFL-qZ-kpe" firstAttribute="top" secondItem="4ob-pU-G3J" secondAttribute="bottom" constant="46" id="8oR-D0-BK1"/>
+                            <constraint firstItem="tFL-qZ-kpe" firstAttribute="top" secondItem="4ob-pU-G3J" secondAttribute="bottom" constant="26" id="8oR-D0-BK1"/>
                             <constraint firstItem="Nqw-ND-Mkv" firstAttribute="leading" secondItem="qfL-7H-A5t" secondAttribute="leadingMargin" constant="38" id="HfQ-LO-gDe"/>
                             <constraint firstItem="dX7-vx-eK4" firstAttribute="centerX" secondItem="qfL-7H-A5t" secondAttribute="centerX" id="SKr-17-x9C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4ob-pU-G3J" secondAttribute="trailing" constant="26" id="ZY1-eR-Fpz"/>
                             <constraint firstItem="Nqw-ND-Mkv" firstAttribute="centerY" secondItem="qfL-7H-A5t" secondAttribute="centerY" id="aae-HM-yy5"/>
                             <constraint firstItem="dX7-vx-eK4" firstAttribute="centerX" secondItem="Nqw-ND-Mkv" secondAttribute="centerX" id="iNO-wk-cko"/>
-                            <constraint firstItem="Nqw-ND-Mkv" firstAttribute="trailing" secondItem="4ob-pU-G3J" secondAttribute="trailing" id="ioD-Wi-bxj"/>
                             <constraint firstItem="dX7-vx-eK4" firstAttribute="leading" secondItem="qfL-7H-A5t" secondAttribute="leadingMargin" constant="39" id="lBh-5a-sK1"/>
                             <constraint firstItem="dX7-vx-eK4" firstAttribute="top" secondItem="4Xx-zv-E4E" secondAttribute="bottom" constant="120" id="nnV-CK-yWY"/>
                         </constraints>
@@ -408,7 +421,11 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oby-mY-q9b" customClass="FabButton" customModule="Material">
-                                <rect key="frame" x="275" y="591" width="46" height="30"/>
+                                <rect key="frame" x="285" y="593" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Qlk-U1-enH"/>
+                                    <constraint firstAttribute="width" constant="48" id="XtT-pu-cQE"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="PkO-7O-VUw" kind="show" id="cFT-DQ-5Nv"/>
@@ -417,13 +434,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0wm-kk-N5F" firstAttribute="top" secondItem="oby-mY-q9b" secondAttribute="bottom" constant="46" id="FFn-KT-nHl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oby-mY-q9b" secondAttribute="trailing" constant="26" id="FE5-ak-TJ9"/>
+                            <constraint firstItem="0wm-kk-N5F" firstAttribute="top" secondItem="oby-mY-q9b" secondAttribute="bottom" constant="26" id="FFn-KT-nHl"/>
                             <constraint firstItem="luT-0M-7EP" firstAttribute="centerY" secondItem="6J0-v9-Rx4" secondAttribute="centerY" id="PIm-bZ-T7B"/>
                             <constraint firstItem="7C3-QC-nqi" firstAttribute="centerX" secondItem="6J0-v9-Rx4" secondAttribute="centerX" constant="12.5" id="cBm-ld-R0n"/>
                             <constraint firstItem="7C3-QC-nqi" firstAttribute="top" secondItem="JZD-ew-aPB" secondAttribute="bottom" constant="120" id="oFd-dk-wLt"/>
                             <constraint firstItem="7C3-QC-nqi" firstAttribute="leading" secondItem="6J0-v9-Rx4" secondAttribute="leadingMargin" constant="39" id="ob8-lW-dOX"/>
                             <constraint firstItem="7C3-QC-nqi" firstAttribute="centerX" secondItem="luT-0M-7EP" secondAttribute="centerX" constant="12.5" id="vtx-Xb-OH3"/>
-                            <constraint firstItem="luT-0M-7EP" firstAttribute="trailing" secondItem="oby-mY-q9b" secondAttribute="trailing" id="yZ5-zf-Ni8"/>
                             <constraint firstItem="luT-0M-7EP" firstAttribute="leading" secondItem="6J0-v9-Rx4" secondAttribute="leadingMargin" constant="38" id="zUo-MI-NEQ"/>
                         </constraints>
                     </view>
@@ -439,7 +456,6 @@
         <!--Login View Controller-->
         <scene sceneID="i2o-XR-Flq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="icK-l3-KUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="PkO-7O-VUw" customClass="LoginViewController" customModule="TripMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xso-Qa-Msj"/>
@@ -454,6 +470,7 @@
                         <segue destination="vh1-Nm-aqf" kind="show" identifier="matched" id="272-Sq-j4f"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="icK-l3-KUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2684" y="206"/>
         </scene>

@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import SearchTextField
 
-class AirportViewController: UIViewController, UITextFieldDelegate {
+class AirportViewController: BaseOnboardViewController {
     
     let AMADEUS_API_KEY = "Eq55oRpz6dwQe3jXTLF1d3Gq8Lpxmpb1"
     
