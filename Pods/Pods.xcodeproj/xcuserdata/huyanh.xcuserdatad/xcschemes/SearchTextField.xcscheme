@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DDBCFDE490CDFDABF6F16A26F346932D'
-               BlueprintName = 'FacebookCore'
+               BlueprintIdentifier = '34B8BE5AFEAD531B65D8B99EE170B0EF'
+               BlueprintName = 'SearchTextField'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'FacebookCore.framework'>
+               BuildableName = 'SearchTextField.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

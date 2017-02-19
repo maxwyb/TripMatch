@@ -12,4 +12,6 @@ target 'TripMatch' do
   pod 'Firebase'
   pod 'Firebase/Database'
   pod 'Alamofire', '~> 4.3'
+
+  pod "SearchTextField"
 end

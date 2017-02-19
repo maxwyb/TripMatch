@@ -146,7 +146,7 @@
 				TargetAttributes = {
 					5051CBC11E585BAE00E6EC13 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8YVEPU4MZW;
+						DevelopmentTeam = Q8R76S2QE8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -367,11 +367,11 @@
 			baseConfigurationReference = C9F6F9D004628D887E2AFD39 /* Pods-TripMatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8YVEPU4MZW;
+				DEVELOPMENT_TEAM = Q8R76S2QE8;
 				INFOPLIST_FILE = TripMatch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YingboWang.TripMatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YingboWang.TripMatchHuyanh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -382,11 +382,11 @@
 			baseConfigurationReference = 304A1205C6E87874A65B5B15 /* Pods-TripMatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8YVEPU4MZW;
+				DEVELOPMENT_TEAM = Q8R76S2QE8;
 				INFOPLIST_FILE = TripMatch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YingboWang.TripMatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YingboWang.TripMatchHuyanh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
