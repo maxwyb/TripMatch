@@ -18,6 +18,7 @@ struct ButtonLayout {
 class BaseOnboardViewController: UIViewController {
     
     @IBOutlet weak var fabButton: FabButton!
+    var buttonOrigin: CGPoint?
     @IBOutlet weak var textField: UITextField!
     
     fileprivate var keyboardSize: CGRect?
@@ -26,6 +27,7 @@ class BaseOnboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        buttonOrigin = fabButton.frame.origin
         textField.delegate = self
         prepareFabButton()
         registerForKeyboardNotifications()
@@ -66,7 +68,7 @@ class BaseOnboardViewController: UIViewController {
 //            self.view.frame.origin = CGPoint(x: 0, y: -self.keyboardSize!.height)
 //        }, completion: nil)
         UIView.animate(withDuration: 0.1) {
-            self.fabButton.frame.origin = CGPoint(x: self.fabButton.frame.origin.x, y: self.fabButton.frame.origin.y - self.keyboardSize!.height + 50)
+            self.fabButton.frame.origin = CGPoint(x: self.fabButton.frame.origin.x, y: self.fabButton.frame.origin.y - self.keyboardSize!.height)
         }
     }
     
@@ -75,7 +77,7 @@ class BaseOnboardViewController: UIViewController {
 //            self.view.frame.origin = CGPoint(x: 0, y: 0)
 //        }
         UIView.animate(withDuration: 0.1) {
-            self.fabButton.frame.origin = CGPoint(x: 0, y: 0)
+            self.fabButton.frame.origin = self.buttonOrigin!
         }
         
     }
