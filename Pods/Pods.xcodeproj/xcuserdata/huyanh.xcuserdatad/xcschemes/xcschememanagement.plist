@@ -49,12 +49,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Material-io.cosmicmind.material.icons.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Material.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TripMatch.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>SearchTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>expanding-collection.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -72,12 +92,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>34B8BE5AFEAD531B65D8B99EE170B0EF</key>
+		<key>4017B0B8815FF792314F1A877AAA2243</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>44CAD6CE523055ED339E87154473A254</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A2F765C0008E6907A56FA900AB21F77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4C67514EA7D98658F641516ED8328206</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,17 +132,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>8F484F007B39BCB965ACC65F13D28979</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A7FEAA14E89971698ACA148F7F7202F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DDBCFDE490CDFDABF6F16A26F346932D</key>
+		<key>B0EA640FB1DFCF8E701F875CF88EF682</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F195F5CDC530944F0A803349CCC67281</key>
+		<key>C10A3D56D9722EC76584E3911946028F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDBCFDE490CDFDABF6F16A26F346932D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

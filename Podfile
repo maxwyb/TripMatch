@@ -11,7 +11,8 @@ target 'TripMatch' do
   pod 'FacebookShare'
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'Material', '~> 2.0'
   pod 'Alamofire', '~> 4.3'
-
+  pod 'expanding-collection', '~> 1.0.3'
   pod "SearchTextField"
 end

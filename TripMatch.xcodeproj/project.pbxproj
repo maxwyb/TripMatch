@@ -9,13 +9,26 @@
 /* Begin PBXBuildFile section */
 		3B4169301E58DBB30001D532 /* DashHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B41692F1E58DBB30001D532 /* DashHeaderViewController.swift */; };
 		3B4169321E58E9E00001D532 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4169311E58E9E00001D532 /* DashboardViewController.swift */; };
-		5018BBAE1E58F98800A3D4B4 /* AirportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5018BBAD1E58F98800A3D4B4 /* AirportViewController.swift */; };
+		3B4169FB1E5903620001D532 /* CityOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4169FA1E5903620001D532 /* CityOnboardViewController.swift */; };
+		3B4169FE1E5903BA0001D532 /* ReasonOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4169FD1E5903BA0001D532 /* ReasonOnboardViewController.swift */; };
+		3B416A021E59040F0001D532 /* BaseOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416A011E59040F0001D532 /* BaseOnboardViewController.swift */; };
+		3B416A051E5916B50001D532 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416A041E5916B50001D532 /* Utility.swift */; };
+		3B416A071E5935890001D532 /* FlightOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416A061E5935890001D532 /* FlightOnboardViewController.swift */; };
+		3B416A091E5935AB0001D532 /* DepartOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B416A081E5935AB0001D532 /* DepartOnboardViewController.swift */; };
+		3BA2FACB1E5A2AC3002B2A76 /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2FACA1E5A2AC3002B2A76 /* DemoTableViewController.swift */; };
+		3BA2FACF1E5A2B19002B2A76 /* DemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2FACD1E5A2B19002B2A76 /* DemoCollectionViewCell.swift */; };
+		3BA2FAD01E5A2B19002B2A76 /* DemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA2FACE1E5A2B19002B2A76 /* DemoCollectionViewCell.xib */; };
+		3BA2FAD61E5A2B73002B2A76 /* AnimationBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2FAD31E5A2B73002B2A76 /* AnimationBarButton.swift */; };
+		3BA2FAD71E5A2B73002B2A76 /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2FAD51E5A2B73002B2A76 /* Rotatable.swift */; };
+		3BA2FADA1E5A2B82002B2A76 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA2FAD91E5A2B82002B2A76 /* Images.swift */; };
 		5051CBC61E585BAE00E6EC13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051CBC51E585BAE00E6EC13 /* AppDelegate.swift */; };
 		5051CBC81E585BAE00E6EC13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051CBC71E585BAE00E6EC13 /* ViewController.swift */; };
 		5051CBCB1E585BAE00E6EC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5051CBC91E585BAE00E6EC13 /* Main.storyboard */; };
 		5051CBCD1E585BAE00E6EC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5051CBCC1E585BAE00E6EC13 /* Assets.xcassets */; };
 		5051CBD01E585BAE00E6EC13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5051CBCE1E585BAE00E6EC13 /* LaunchScreen.storyboard */; };
 		5C599E733EED3ACA9B5309C7 /* Pods_TripMatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4131B46BAEF26E7F42E84C73 /* Pods_TripMatch.framework */; };
+		81D487631E5A221C0044FC40 /* AirportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D487621E5A221C0044FC40 /* AirportViewController.swift */; };
+		81D487651E5A23290044FC40 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D487641E5A23290044FC40 /* DemoViewController.swift */; };
 		81E5B9651E58AC6800657D12 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5B9641E58AC6800657D12 /* TextFieldsEffects.swift */; };
 		81E5B9671E58AC7300657D12 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5B9661E58AC7300657D12 /* HoshiTextField.swift */; };
 		81E5B9691E58B61300657D12 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5B9681E58B61300657D12 /* LoginViewController.swift */; };
@@ -26,8 +39,19 @@
 		304A1205C6E87874A65B5B15 /* Pods-TripMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripMatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripMatch/Pods-TripMatch.release.xcconfig"; sourceTree = "<group>"; };
 		3B41692F1E58DBB30001D532 /* DashHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashHeaderViewController.swift; sourceTree = "<group>"; };
 		3B4169311E58E9E00001D532 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		3B4169FA1E5903620001D532 /* CityOnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityOnboardViewController.swift; path = Onboard/CityOnboardViewController.swift; sourceTree = "<group>"; };
+		3B4169FD1E5903BA0001D532 /* ReasonOnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReasonOnboardViewController.swift; path = Onboard/ReasonOnboardViewController.swift; sourceTree = "<group>"; };
+		3B416A011E59040F0001D532 /* BaseOnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseOnboardViewController.swift; path = Onboard/BaseOnboardViewController.swift; sourceTree = "<group>"; };
+		3B416A041E5916B50001D532 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Utility/Utility.swift; sourceTree = "<group>"; };
+		3B416A061E5935890001D532 /* FlightOnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlightOnboardViewController.swift; path = Onboard/FlightOnboardViewController.swift; sourceTree = "<group>"; };
+		3B416A081E5935AB0001D532 /* DepartOnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DepartOnboardViewController.swift; path = Onboard/DepartOnboardViewController.swift; sourceTree = "<group>"; };
+		3BA2FACA1E5A2AC3002B2A76 /* DemoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTableViewController.swift; sourceTree = "<group>"; };
+		3BA2FACD1E5A2B19002B2A76 /* DemoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BA2FACE1E5A2B19002B2A76 /* DemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCollectionViewCell.xib; sourceTree = "<group>"; };
+		3BA2FAD31E5A2B73002B2A76 /* AnimationBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationBarButton.swift; sourceTree = "<group>"; };
+		3BA2FAD51E5A2B73002B2A76 /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
+		3BA2FAD91E5A2B82002B2A76 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		4131B46BAEF26E7F42E84C73 /* Pods_TripMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5018BBAD1E58F98800A3D4B4 /* AirportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportViewController.swift; sourceTree = "<group>"; };
 		5051CBC21E585BAE00E6EC13 /* TripMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5051CBC51E585BAE00E6EC13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5051CBC71E585BAE00E6EC13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +59,8 @@
 		5051CBCC1E585BAE00E6EC13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5051CBCF1E585BAE00E6EC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5051CBD11E585BAE00E6EC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D487621E5A221C0044FC40 /* AirportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportViewController.swift; sourceTree = "<group>"; };
+		81D487641E5A23290044FC40 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		81E5B9631E58AC5900657D12 /* TextFieldEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
 		81E5B9641E58AC6800657D12 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
 		81E5B9661E58AC7300657D12 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
@@ -55,6 +81,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B4169FC1E5903680001D532 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				3B416A011E59040F0001D532 /* BaseOnboardViewController.swift */,
+				3B4169FA1E5903620001D532 /* CityOnboardViewController.swift */,
+				3B4169FD1E5903BA0001D532 /* ReasonOnboardViewController.swift */,
+				3B416A061E5935890001D532 /* FlightOnboardViewController.swift */,
+				3B416A081E5935AB0001D532 /* DepartOnboardViewController.swift */,
+				81D487621E5A221C0044FC40 /* AirportViewController.swift */,
+			);
+			name = Onboard;
+			sourceTree = "<group>";
+		};
+		3B416A031E59168C0001D532 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3B416A041E5916B50001D532 /* Utility.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		3BA2FACC1E5A2B19002B2A76 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2FACD1E5A2B19002B2A76 /* DemoCollectionViewCell.swift */,
+				3BA2FACE1E5A2B19002B2A76 /* DemoCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3BA2FAD11E5A2B73002B2A76 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2FAD21E5A2B73002B2A76 /* AnimatingBarButton */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3BA2FAD21E5A2B73002B2A76 /* AnimatingBarButton */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2FAD31E5A2B73002B2A76 /* AnimationBarButton.swift */,
+				3BA2FAD41E5A2B73002B2A76 /* Animations */,
+			);
+			path = AnimatingBarButton;
+			sourceTree = "<group>";
+		};
+		3BA2FAD41E5A2B73002B2A76 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2FAD51E5A2B73002B2A76 /* Rotatable.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		3BA2FAD81E5A2B82002B2A76 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3BA2FAD91E5A2B82002B2A76 /* Images.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		5051CBB91E585BAE00E6EC13 = {
 			isa = PBXGroup;
 			children = (
@@ -76,20 +165,26 @@
 		5051CBC41E585BAE00E6EC13 /* TripMatch */ = {
 			isa = PBXGroup;
 			children = (
+				3B41692F1E58DBB30001D532 /* DashHeaderViewController.swift */,
+				3B4169311E58E9E00001D532 /* DashboardViewController.swift */,
+				81D487641E5A23290044FC40 /* DemoViewController.swift */,
+				3BA2FACA1E5A2AC3002B2A76 /* DemoTableViewController.swift */,
+				3BA2FACC1E5A2B19002B2A76 /* Cells */,
+				3B416A031E59168C0001D532 /* Utility */,
+				3B4169FC1E5903680001D532 /* Onboard */,
 				81E5B96A1E58BBB400657D12 /* GoogleService-Info.plist */,
 				81E5B9631E58AC5900657D12 /* TextFieldEffects.h */,
 				81E5B9641E58AC6800657D12 /* TextFieldsEffects.swift */,
 				81E5B9661E58AC7300657D12 /* HoshiTextField.swift */,
 				5051CBC51E585BAE00E6EC13 /* AppDelegate.swift */,
-				3B4169311E58E9E00001D532 /* DashboardViewController.swift */,
-				3B41692F1E58DBB30001D532 /* DashHeaderViewController.swift */,
 				5051CBC71E585BAE00E6EC13 /* ViewController.swift */,
 				81E5B9681E58B61300657D12 /* LoginViewController.swift */,
 				5051CBC91E585BAE00E6EC13 /* Main.storyboard */,
 				5051CBCC1E585BAE00E6EC13 /* Assets.xcassets */,
 				5051CBCE1E585BAE00E6EC13 /* LaunchScreen.storyboard */,
 				5051CBD11E585BAE00E6EC13 /* Info.plist */,
-				5018BBAD1E58F98800A3D4B4 /* AirportViewController.swift */,
+				3BA2FAD81E5A2B82002B2A76 /* Constants */,
+				3BA2FAD11E5A2B73002B2A76 /* Views */,
 			);
 			path = TripMatch;
 			sourceTree = "<group>";
@@ -146,7 +241,7 @@
 				TargetAttributes = {
 					5051CBC11E585BAE00E6EC13 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Q8R76S2QE8;
+						DevelopmentTeam = GZ94KJGS66;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -174,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA2FAD01E5A2B19002B2A76 /* DemoCollectionViewCell.xib in Resources */,
 				5051CBD01E585BAE00E6EC13 /* LaunchScreen.storyboard in Resources */,
 				81E5B96B1E58BBB400657D12 /* GoogleService-Info.plist in Resources */,
 				5051CBCD1E585BAE00E6EC13 /* Assets.xcassets in Resources */,
@@ -236,14 +332,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4169FB1E5903620001D532 /* CityOnboardViewController.swift in Sources */,
+				3B4169FE1E5903BA0001D532 /* ReasonOnboardViewController.swift in Sources */,
 				5051CBC81E585BAE00E6EC13 /* ViewController.swift in Sources */,
 				3B4169321E58E9E00001D532 /* DashboardViewController.swift in Sources */,
+				3BA2FACB1E5A2AC3002B2A76 /* DemoTableViewController.swift in Sources */,
+				3BA2FAD71E5A2B73002B2A76 /* Rotatable.swift in Sources */,
+				3B416A021E59040F0001D532 /* BaseOnboardViewController.swift in Sources */,
 				3B4169301E58DBB30001D532 /* DashHeaderViewController.swift in Sources */,
 				81E5B9651E58AC6800657D12 /* TextFieldsEffects.swift in Sources */,
+				81D487651E5A23290044FC40 /* DemoViewController.swift in Sources */,
+				3B416A071E5935890001D532 /* FlightOnboardViewController.swift in Sources */,
 				5051CBC61E585BAE00E6EC13 /* AppDelegate.swift in Sources */,
+				3B416A051E5916B50001D532 /* Utility.swift in Sources */,
+				3BA2FACF1E5A2B19002B2A76 /* DemoCollectionViewCell.swift in Sources */,
 				81E5B9691E58B61300657D12 /* LoginViewController.swift in Sources */,
-				5018BBAE1E58F98800A3D4B4 /* AirportViewController.swift in Sources */,
 				81E5B9671E58AC7300657D12 /* HoshiTextField.swift in Sources */,
+				3B416A091E5935AB0001D532 /* DepartOnboardViewController.swift in Sources */,
+				3BA2FADA1E5A2B82002B2A76 /* Images.swift in Sources */,
+				3BA2FAD61E5A2B73002B2A76 /* AnimationBarButton.swift in Sources */,
+				81D487631E5A221C0044FC40 /* AirportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,11 +475,11 @@
 			baseConfigurationReference = C9F6F9D004628D887E2AFD39 /* Pods-TripMatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q8R76S2QE8;
+				DEVELOPMENT_TEAM = GZ94KJGS66;
 				INFOPLIST_FILE = TripMatch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YingboWang.TripMatchHuyanh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YingboWang.TripMatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -382,11 +490,11 @@
 			baseConfigurationReference = 304A1205C6E87874A65B5B15 /* Pods-TripMatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q8R76S2QE8;
+				DEVELOPMENT_TEAM = GZ94KJGS66;
 				INFOPLIST_FILE = TripMatch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YingboWang.TripMatchHuyanh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YingboWang.TripMatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
